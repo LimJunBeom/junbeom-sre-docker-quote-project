@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-quote-left"></i>
+                <h1>Quote Generator API</h1>
+            </div>
+            <p class="subtitle">Professional Quote Generation Service</p>
+        </header>
+
+        <main class="main">
+            <div class="api-status">
+                <div class="status-card">
+                    <div class="status-indicator" id="statusIndicator">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <span id="statusText">Checking API Status...</span>
+                </div>
+            </div>
+
+            <div class="quote-section">
+                <div class="quote-card" id="quoteCard">
+                    <div class="quote-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p id="quoteText">Click the button below to get a random quote</p>
+                        <i class="fas fa-quote-right quote-icon"></i>
+                    </div>
+                    <div class="quote-author" id="quoteAuthor"></div>
+                </div>
+
+                <button class="generate-btn" id="generateBtn">
+                    <i class="fas fa-sync-alt"></i>
+                    Generate Quote
+                </button>
+            </div>
+
+            <div class="api-info">
+                <h2>API Endpoints</h2>
+                <div class="endpoints">
+                    <div class="endpoint-card">
+                        <div class="endpoint-header">
+                            <span class="method get">GET</span>
+                            <span class="path">/quote</span>
+                        </div>
+                        <p>Get a random inspirational quote</p>
+                        <button class="test-btn" onclick="testEndpoint('/quote')">
+                            <i class="fas fa-play"></i> Test
+                        </button>
+                    </div>
+
+                    <div class="endpoint-card">
+                        <div class="endpoint-header">
+                            <span class="method get">GET</span>
+                            <span class="path">/health</span>
+                        </div>
+                        <p>Check API health status</p>
+                        <button class="test-btn" onclick="testEndpoint('/health')">
+                            <i class="fas fa-play"></i> Test
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="response-section" id="responseSection" style="display: none;">
+                <h3>API Response</h3>
+                <pre id="responseData"></pre>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Quote Generator API. Built with Node.js & Docker.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

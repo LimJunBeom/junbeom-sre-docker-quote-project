@@ -1,0 +1,20 @@
+{
+    "name": "quote-generator-api",
+    "version": "1.0.0",
+    "description": "A simple Node.js Express API that returns a random quote at /quote",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "api",
+        "quotes",
+        "docker"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.21.2"
+    }
+}
