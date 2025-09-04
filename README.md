@@ -52,6 +52,21 @@ Visit `http://localhost:3001` (Docker) or `http://localhost:3000` (local) to acc
 - 🧪 **API Testing**: Test endpoints directly from browser
 - 📋 **Response Viewer**: Formatted JSON responses
 
+### Screenshots
+
+<div align="center">
+
+![Docker Quote Generator Screenshot 1](docs/screenshots/Docker_Quote_Generator_Screenshot_1.png)
+*Main web interface with API status monitoring*
+
+![Docker Quote Generator Screenshot 2](docs/screenshots/Docker_Quote_Generator_Screenshot_2.png)
+*Quote generation and API testing features*
+
+![Docker Quote Generator Screenshot 3](docs/screenshots/Docker_Quote_Generator_Screenshot_3.png)
+*JSON response viewer and endpoint testing*
+
+</div>
+
 ## Docker Management
 
 ```bash
